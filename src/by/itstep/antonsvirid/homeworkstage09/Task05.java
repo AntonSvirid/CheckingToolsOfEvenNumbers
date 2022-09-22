@@ -15,10 +15,6 @@ public class Task05 {
         }
         return msg;
     }
-    public static void print(String msg) {
-        System.out.println(msg);
-    }
-
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
