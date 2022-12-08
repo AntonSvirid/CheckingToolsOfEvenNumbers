@@ -1,20 +1,20 @@
-package by.itstep.antonsvirid.homeworkstage09;
+package com.company.antonsvirid.homeworkstage09;
+
+import com.company.antonsvirid.homeworkstage09.com.company.antonsvirid.homeworkstage09.task02.view.Printer;
 
 import java.util.Scanner;
 
-public class Task05 {
-    public static String msg(double a, double b, double c) {
-        String msg = "Error, no one even number or more then one even number in input";
+public class Task03 {
 
-        if (a % 2 == 0 && b % 2 != 0 && c % 2 != 0) {
-            msg = "Only number A is even";
-        } else if (a % 2 != 0 && b % 2 == 0 && c % 2 != 0) {
-            msg = "Only number B is even";
-        } else if (a % 2 != 0 && b % 2 != 0 && c % 2 == 0) {
-            msg = "Only number C is even";
+    public static String msg(double a, double b, double c) {
+        String msg = "Numbers are not even";
+
+        if (a % 2 == 0 & b % 2 == 0 & c % 2 == 0) {
+            msg = "All numbers are even";
         }
         return msg;
     }
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -26,6 +26,6 @@ public class Task05 {
         double c = scanner.nextDouble();
 
         String msg = msg(a, b, c);
-        Task02.print(msg);
+        Printer.print(msg);
     }
 }

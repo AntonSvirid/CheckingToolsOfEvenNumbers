@@ -1,24 +1,14 @@
-package by.itstep.antonsvirid.homeworkstage09;
+package com.company.antonsvirid.homeworkstage09.com.company.antonsvirid.homeworkstage09.task02.controller;
+
+import com.company.antonsvirid.homeworkstage09.com.company.antonsvirid.homeworkstage09.task02.model.Logic;
+import com.company.antonsvirid.homeworkstage09.com.company.antonsvirid.homeworkstage09.task02.view.Printer;
 
 import java.util.Scanner;
 
-public class Task02 {
-
-    public static String msg(double x1, double x2, double x3, double y1, double y2, double y3) {
-
-        String msg = "Sorry, your point not include in given rectangle ";
-
-        if (x3 > x1 && x3 < x2 && y3 < y1 && y3 > y2) {
-            msg = "Cool, your point is include in given rectangle!";
-        }
-        return msg;
-    }
-
-    public static void print(String msg) {
-        System.out.println(msg);
-    }
-
+public class Main {
     public static void main(String[] args) {
+
+        // a program for determining the exact position of point - whether a point enters a given quadrilateral.
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please input X-coordinate of upper left rectangle corner: ");
@@ -34,7 +24,8 @@ public class Task02 {
         System.out.println("Please input Y-coordinate of of your point: ");
         double y3 = scanner.nextDouble();
 
-        String msg = msg(x1, x2, x3, y1, y2, y3);
-        print(msg);
+        String msg = Logic.msg(x1, x2, x3, y1, y2, y3);
+
+        Printer.print(msg);
     }
 }
