@@ -1,7 +1,7 @@
 package com.company.antonsvirid.homeworkstage09.com.company.antonsvirid.homeworkstage09.task02.controller;
 
 import com.company.antonsvirid.homeworkstage09.com.company.antonsvirid.homeworkstage09.task02.model.Logic;
-import com.company.antonsvirid.homeworkstage09.com.company.antonsvirid.homeworkstage09.task02.view.Printer;
+import com.company.antonsvirid.homeworkstage09.com.company.antonsvirid.homeworkstage09.view.Printer;
 
 import java.util.Scanner;
 
